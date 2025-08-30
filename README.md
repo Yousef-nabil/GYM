@@ -40,6 +40,19 @@ The system is built using Java and follows a structured approach with three main
 - Class registration only occurs if there are available seats.
 - Admin and Trainer login credentials are validated.
 
+- **Language & Frameworks**: Java SE, Java Swing (for GUI)  
+- **Architecture**: Desktop application following **OOP principles**  
+- **Data Storage**: File-based (text/JSON files) instead of a relational database  
+- **Design Patterns Used**:
+  - **Singleton**: For centralized file access and controllers  
+  - **Factory Pattern**: For creating different user types (Admin, Trainer)  
+  - **Observer Pattern**: Notifies GUI components on data changes (optional/extendable)  
+- **SOLID Principles Demonstrated**:
+  - **S**ingle Responsibility: Each class has a focused task (e.g., TrainerManager, MemberManager)  
+  - **O**pen/Closed: Classes can be extended without modifying core logic  
+  - **L**iskov Substitution: Admin and Trainer share common behaviors  
+  - **I**nterface Segregation: Interfaces separate responsibilities (login, file handling)
+    
 ## How to Run the Project
 
 1. **Clone the Repository**:
